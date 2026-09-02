@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>خانه عقد یارا | Emarat Yara</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+           
+        </div>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#services">خدمات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#location">آدرس</a>
+        </nav>
+
+        <button id="darkModeBtn">🌙</button>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1 class="yara-title">
+    <small class="house-title">خانه عقد</small>
+
+    <img
+        src="logo.png"
+        alt="خانه عقد یارا"
+        class="main-logo"
+    >
+
+            </h1>
+
+    <p>
+        جایی برای آغاز زیباترین لحظه‌های زندگی
+    </p>
+
+    <a
+        class="instagram-btn"
+        href="https://www.instagram.com/emarat_yara/"
+        target="_blank"
+    >
+        <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+    <circle cx="12" cy="12" r="4"></circle>
+    <circle cx="17.5" cy="6.5" r="1"></circle>
+</svg>
+
+<span>Instagram</span>
+    </a>
+
+    <a
+    class="call-btn"
+    href="tel:+989397357426"
+>
+    📞 تماس و رزرو
+</a>
+
+</div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2>خدمات ما</h2>
+
+        <div class="services">
+
+            <div class="service-card">
+                <h3>💍 برگزاری مراسم عقد</h3>
+                <p>
+                    برگزاری مراسم عقد در فضایی زیبا و مناسب برای شروع زندگی مشترک.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🌹 دیزاین و چیدمان</h3>
+                <p>
+                    طراحی و چیدمان فضای مراسم متناسب با سلیقه شما.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>✨ خدمات ویژه مراسم</h3>
+                <p>
+                    ارائه خدمات متنوع برای داشتن مراسمی خاص و به‌یادماندنی.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>درباره خانه عقد یارا</h2>
+
+        <p>
+            خانه عقد یارا با هدف ساختن لحظاتی زیبا و ماندگار،
+            آماده میزبانی از شما برای یکی از مهم‌ترین روزهای زندگی‌تان است.
+        </p>
+
+    </section>
+
+
+    <!-- Location -->
+    <section id="location">
+
+        <h2>آدرس و موقعیت</h2>
+
+        <p>
+            📍 اصفهان
+        </p>
+
+        <div class="map">
+            نقشه در این قسمت قرار می‌گیرد
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            ©  خانه عقد یارا
+        </p>
+
+        <a
+            href="https://www.instagram.com/emarat_yara/"
+            target="_blank"
+        >
+            Instagram: @emarat_yara
+        </a>
+
+    </footer>
+
+<button id="backToTop" title="بازگشت به بالا">
+    ↑
+</button>
+
+<button id="backToTop" title="بازگشت به بالا">↑</button>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
+</body>
+</html>
