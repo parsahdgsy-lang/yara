@@ -660,3 +660,124 @@ body.dark .yara-title small {
 #backToTop:hover {
     transform: translateY(-5px);
 }
+
+/* =========================
+   📱 طراحی مخصوص موبایل
+========================= */
+
+@media (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    /* بخش‌های سایت */
+    section {
+        width: 100%;
+        padding: 55px 20px;
+    }
+
+    /* عنوان بخش‌ها */
+    section h2 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    /* متن‌ها */
+    section p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    /* =========================
+       خدمات
+    ========================= */
+
+    .services-container,
+    .services-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .service-card {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    /* =========================
+       درباره ما
+    ========================= */
+
+    #about {
+        width: 100%;
+        padding: 70px 20px;
+    }
+
+    #about p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 2.2;
+    }
+
+    /* =========================
+       آدرس و نقشه
+    ========================= */
+
+    #location {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    #location iframe {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 18px;
+    }
+
+    /* =========================
+       دکمه‌ها
+    ========================= */
+
+    button,
+    .btn {
+        max-width: 100%;
+    }
+
+    /* =========================
+       تصاویر
+    ========================= */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
