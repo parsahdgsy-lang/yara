@@ -781,3 +781,121 @@ body.dark .yara-title small {
         height: auto;
     }
 }
+
+/* =========================
+   📱 نسخه واقعی موبایل
+========================= */
+
+@media (max-width: 700px) {
+
+    /* جلوگیری از بیرون زدن صفحه */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* هدر */
+    header {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* صفحه اول */
+    .hero {
+        min-height: 100vh;
+        padding: 90px 20px 50px;
+    }
+
+    .hero-content {
+        top: 0;
+    }
+
+    .main-logo {
+        width: 180px;
+        max-width: 75vw;
+        margin-bottom: 20px;
+    }
+
+    .house-title {
+        top: 0;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 25px;
+    }
+
+    /* دکمه‌ها */
+    .instagram-btn,
+    .call-btn {
+        width: 160px;
+        min-height: 48px;
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .call-btn {
+        margin-top: 10px;
+    }
+
+    /* تمام بخش‌ها */
+    section:not(.hero) {
+        width: 100%;
+        padding: 65px 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    /* ⭐ خدمات - مهم‌ترین قسمت ⭐ */
+    .services {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    /* درباره ما */
+    #about p {
+        font-size: 14px;
+        line-height: 2.2;
+    }
+
+    /* نقشه */
+    .map {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* دکمه بازگشت به بالا */
+    #backToTop {
+        width: 42px;
+        height: 42px;
+        bottom: 18px;
+        left: 15px;
+    }
+}
