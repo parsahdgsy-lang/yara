@@ -1057,3 +1057,22 @@ footer {
 
     z-index: 10000;
 }
+
+.logo-small {
+    width: 390px;
+    height: auto;
+}
+
+.hero-content > p,
+.instagram-btn,
+.call-btn {
+    position: relative;
+    top: 40px;
+}
+
+body.dark .hero-content > p,
+body.dark .hero-content .instagram-btn,
+body.dark .hero-content .call-btn {
+    position: relative;
+    top: 170px;
+}
