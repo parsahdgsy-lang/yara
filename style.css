@@ -899,3 +899,161 @@ body.dark .yara-title small {
         left: 15px;
     }
 }
+
+/* نوار طلایی بالای سایت */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #D4AF37;
+}
+
+/* =========================
+   ✨ تم طلایی خانه عقد یارا
+========================= */
+
+:root {
+    --gold: #D4AF37;
+    --dark-gold: #B8860B;
+}
+
+/* عنوان کوچک خانه عقد */
+.house-title {
+    color: var(--gold);
+}
+
+/* خط طلایی زیر عنوان‌ها */
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: var(--gold);
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* کارت‌های خدمات */
+.service-card {
+    border: 1px solid var(--gold);
+}
+
+/* عنوان خدمات */
+.service-card h3 {
+    color: var(--dark-gold);
+}
+
+/* دکمه اینستاگرام */
+.instagram-btn {
+    background: var(--gold);
+    color: #000;
+}
+
+/* دکمه تماس */
+.call-btn {
+    border-color: var(--gold);
+    color: var(--dark-gold);
+}
+
+/* حالت هاور دکمه تماس */
+.call-btn:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+/* دکمه دارک مود */
+#darkModeBtn {
+    border-color: var(--gold);
+}
+
+/* نقشه */
+.map {
+    border: 2px solid var(--gold);
+}
+
+/* فوتر */
+footer {
+    border-top: 4px solid var(--gold);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    background: #D4AF37;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+
+    z-index: 5;
+}
+
+.hero {
+    position: relative;
+    min-height: 300px;
+    background: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    background: #D4AF37;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+
+    z-index: 9999;
+}.hero {
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 1350px;
+    height: 2px;
+
+    background: #D4AF37;
+
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 9999;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 28px;
+    height: 28px;
+
+    background: #D4AF37;
+
+    top: 86px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+
+    z-index: 10000;
+}
