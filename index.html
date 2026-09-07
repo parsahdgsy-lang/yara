@@ -23,8 +23,6 @@
             <a href="#about">درباره ما</a>
             <a href="#location">آدرس</a>
         </nav>
-
-        <button id="darkModeBtn">🌙</button>
     </header>
 
 
@@ -33,18 +31,37 @@
 
         <div class="hero-content">
 
-            <h1 class="yara-title">
+           <div class="photo-slider">
+
+    <div class="slide left">
+        <img src="hero2.jpg" alt="خانه عقد یارا">
+    </div>
+
+    <div class="slide center">
+        <img src="hero.jpg" alt="خانه عقد یارا">
+    </div>
+
+    <div class="slide right">
+        <img src="hero3.jpg" alt="خانه عقد یارا">
+    </div>
+
+</div>
+
+<h1 class="yara-title">
     <small class="house-title">خانه عقد</small>
 
     <img
-    id="logo"
+        id="logo"
         src="logo.png"
         alt="خانه عقد یارا"
         class="main-logo"
     >
+</h1>
+    
 
             </h1>
 
+            
     <p>
         جایی برای آغاز زیباترین لحظه‌های زندگی
     </p>
@@ -193,13 +210,66 @@ darkModeBtn.addEventListener("click", () => {
 } else {
     logo.src = "logo.png";
     logo.style.width = "390px";
-    logo.style.marginTop = "0px";
+    logo.style.marginTop = "-300px";
     logo.style.marginLeft = "auto";
 }
 });
 </script>
 
+<script>
 
+setInterval(() => {
+
+    const leftSlide = document.querySelector(".slide.left");
+    const centerSlide = document.querySelector(".slide.center");
+    const rightSlide = document.querySelector(".slide.right");
+
+    /* چپ → وسط */
+    leftSlide.classList.remove("left");
+    leftSlide.classList.add("center");
+
+    /* وسط → راست */
+    centerSlide.classList.remove("center");
+    centerSlide.classList.add("right");
+
+    /* راست → چپ */
+    rightSlide.classList.remove("right");
+    rightSlide.classList.add("left");
+
+}, 3500);
+
+</script>
+
+<script>
+const sections = document.querySelectorAll(
+    '#services, #about, #location'
+);
+
+const cards = document.querySelectorAll('.service-card');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+sections.forEach(section => {
+    section.classList.add('scroll-animate');
+    observer.observe(section);
+});
+
+cards.forEach(card => {
+    observer.observe(card);
+});
+</script>
 
 </body>
 </html>
