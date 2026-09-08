@@ -1264,3 +1264,8 @@ header {
     position: relative;
     top: 30px;
 }
+
+.instagram-btn {
+    padding-left: 28px;
+    padding-right: 28px;
+}
