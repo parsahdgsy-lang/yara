@@ -833,19 +833,6 @@ body.dark .yara-title small {
         margin-bottom: 25px;
     }
 
-    /* دکمه‌ها */
-    .instagram-btn,
-    .call-btn {
-        width: 100px;
-        min-height: 48px;
-        padding: 12px 17px;
-        font-size: 12px;
-    }
-
-    .call-btn {
-        margin-top: 10px;
-    }
-
     /* تمام بخش‌ها */
     section:not(.hero) {
         width: 100%;
@@ -1270,4 +1257,10 @@ header {
 
 .service-card:nth-child(3) {
     transition-delay: 0.5s;
+}
+
+.instagram-btn,
+.call-btn {
+    position: relative;
+    top: 30px;
 }
