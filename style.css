@@ -1269,3 +1269,115 @@ header {
     padding-left: 28px;
     padding-right: 28px;
 }
+
+/* =========================
+   نقشه خانه عقد یارا
+========================= */
+
+.location-section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.location-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.map-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.map-box {
+    min-height: 600px;
+    border: 2px solid #222;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #f7f7f7;
+}
+
+.map-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.map-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.map-box h3 {
+    font-size: 24px;
+    margin: 5px 0 10px;
+}
+
+.map-box p {
+    font-size: 16px;
+    margin: 5px 0 15px;
+    opacity: 0.75;
+}
+
+.map-box span {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.map-link {
+    display: block;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.map-image {
+    width: 50%;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.map-image:hover {
+    transform: scale(1.02);
+}
+
+.map-link {
+    display: block;
+    max-width: 900px;
+    margin: 25px auto 0;
+}
+
+.map-image {
+    width: 40%;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.map-image:hover {
+    transform: scale(1.02);
+}
+
+.map-image {
+    width: 60%;
+    height: 590px;
+    max-width: 900px;
+    display: block;
+    margin: -699px auto 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: auto;
+}
