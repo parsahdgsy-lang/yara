@@ -1381,3 +1381,13 @@ header {
 footer {
     margin-top: auto;
 }
+
+@media (max-width: 600px) {
+    .map-image {
+        width: 85%;
+        height: 300px;
+        margin: 25px auto 10px;
+        object-fit: cover;
+    }
+}
+
