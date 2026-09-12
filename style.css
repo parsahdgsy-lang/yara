@@ -1383,6 +1383,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .map-link {
+        transform: translateY(-150px);
+    }
+
     .map-image {
         width: 85%;
         height: 300px;
@@ -1390,4 +1394,3 @@ footer {
         object-fit: cover;
     }
 }
-
