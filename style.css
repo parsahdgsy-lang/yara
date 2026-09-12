@@ -1384,7 +1384,7 @@ footer {
 
 @media (max-width: 600px) {
     .map-link {
-        transform: translateY(-150px);
+        transform: translateY(-400px);
     }
 
     .map-image {
